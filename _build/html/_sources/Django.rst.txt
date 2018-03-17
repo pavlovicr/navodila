@@ -1,0 +1,15 @@
+DJANGO
+======
+::
+DJANGO
+	pip3 install Django==1.11
+	django-admin startproject kalk
+	django-admin startproject . # s piko ne ustvari nepomembnega direktorija
+
+
+
+
+
+
+
+

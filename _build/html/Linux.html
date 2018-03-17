@@ -1,0 +1,142 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>1. LINUX &#8212; udpp navodila 01 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '01',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. GIT" href="Git.html" />
+    <link rel="prev" title="Welcome to udpp’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="linux">
+<h1>1. LINUX<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ustvarjanje-fajlov-in-vsebin">
+<h2>1.1. Ustvarjanje fajlov in vsebin<a class="headerlink" href="#ustvarjanje-fajlov-in-vsebin" title="Permalink to this headline">¶</a></h2>
+<p>ustvari nov fajl</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">vaja1</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>insert tekst “miha kovacev” v vaja1.txt in zbriši predhodni tekst</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>echo “miha kovacev” &gt; vaja1.txt
+</pre></div>
+</div>
+<p>insert nov tekst k predhodnemu</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;županova micka2 &gt;&gt; vaja1.txt</span>
+</pre></div>
+</div>
+<p>poglej vsebino fajla vaja1.txt</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="n">vaja1</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>ustvari nov fajl in kopiraj vsebino iz fajla vaja1.txt</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>cat ”vaja1.txt” &gt; vaja2.txt
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">udpp navodila</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. LINUX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ustvarjanje-fajlov-in-vsebin">1.1. Ustvarjanje fajlov in vsebin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Git.html">2. GIT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Python.html">3. PYTHON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CookieCutter.html">4. COOKIECUTTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Django.html">5. DJANGO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Postgres.html">6. POSTGRES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Selenium.html">7. SELENIUM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSH,FileZilla.html">8. SSH,FILEZILLA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sublime.html">9. SUBLIME 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReadTheDocs.html">10. READTHEDOCS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IPnaslovi.html">11. IP naslovi</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to udpp’s documentation!</a></li>
+      <li>Next: <a href="Git.html" title="next chapter">2. GIT</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, rados.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/Linux.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

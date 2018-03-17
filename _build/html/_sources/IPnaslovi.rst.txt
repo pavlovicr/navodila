@@ -1,0 +1,25 @@
+
+IP naslovi
+^^^^^^^^^^
+
+::
+   * 192.168.64.1 iskratel innbox
+   * 192.168-64.100 DESKTOP-CUF925A dell navidezni za git
+   * 192.168.64.102 PEGATRON (multimedia)
+   * 192.168.64.110 RPi
+   * 192.168.64.103 Cisco Linksys
+   * 192.168.64.104 
+   * 192.168.64.107 Intel Vasja mobile
+   * 192.168.64.106 nevenka PC
+   * 192.168.64.128 Hp knjižnica
+   * 192.168.64.109 Xerox
+
+
++------------------------+------------+----------+----------+
+| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+| (header rows optional) |            |          |          |
++========================+============+==========+==========+
+| body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+| body row 2             | ...        | ...      |          |
++------------------------+------------+----------+----------+

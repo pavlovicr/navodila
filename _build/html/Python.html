@@ -1,0 +1,233 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3. PYTHON &#8212; udpp navodila 01 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '01',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. COOKIECUTTER" href="CookieCutter.html" />
+    <link rel="prev" title="2. GIT" href="Git.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="python">
+<h1>3. PYTHON<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="instalacija-pythona">
+<h2>3.1. instalacija Pythona<a class="headerlink" href="#instalacija-pythona" title="Permalink to this headline">¶</a></h2>
+<p>download iz <a class="reference external" href="https://www.python.org/downloads/python3.6.3">https://www.python.org/downloads/python3.6.3</a>
+iz download direktorija Python-3.6.3 izvršimo ukaze</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">configure</span>
+<span class="n">sudo</span> <span class="n">make</span>
+<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="delo-z-moduli">
+<h2>3.2. delo z moduli<a class="headerlink" href="#delo-z-moduli" title="Permalink to this headline">¶</a></h2>
+<p>informacije o modulu datetime dirktno iz linux terminala</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pydoc</span> <span class="n">datetime</span>
+</pre></div>
+</div>
+<p>kodo, ki je vpisana pod tem izrazom zažene samo takrat, ko poženemo izvirni fajl
+in ne z &gt;&gt;&gt; import mojmodul.
+Koristno pri delu s testi, ki so sestavni del kode na istem fajlu</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>instalacija lastnih modulov v site-packages, ki se nahaja v
+home/pavlovicr/virtualno_test/lib/python3.5/site-packages</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;~/vaja&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">vaja</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">primer</span>
+</pre></div>
+</div>
+<p>izpis imena modula , ki je bil importan
+primer za ime modula ‘time’</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">time</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="vm">__name__</span>
+</pre></div>
+</div>
+<p>delo s časom</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">datetime</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>primer tekoče ure</dt>
+<dd>&gt;&gt;&gt;a=datetime.datetime.now().hour</dd>
+<dt>lahko tudi</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">hour</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">minute</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">day</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>primer 12 sekund do izklopa</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;import time</span>
+<span class="go">&gt;&gt;&gt;time.sleep(12)</span>
+</pre></div>
+</div>
+<p>primer današnji dan</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;time.localtime().tm_mday</span>
+</pre></div>
+</div>
+<p>primer danes</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;time.asctime()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="razno">
+<h2>3.3. razno<a class="headerlink" href="#razno" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pip">
+<h2>3.4. pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>::</dt>
+<dd>sudo apt install python3-pip
+pip3 install –upgrade pip</dd>
+</dl>
+<p>seznam instaliranih programov</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">freeze</span>
+</pre></div>
+</div>
+<p>testiranje
+izpis izvajanja testa kode, ko je test sestavni del kode</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">vaja</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="virtualno-okolje">
+<h2>3.5. VIRTUALNO OKOLJE<a class="headerlink" href="#virtualno-okolje" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>3.5.1. VIRTUALNO OKOLJE<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>sudo pip3 install <a class="reference external" href="https://github.com/pypa/virtualenv/tarball/master">https://github.com/pypa/virtualenv/tarball/master</a> je opcija z zadnjo verzijo
+LOCAL je ime novega virtualnega okolja, ki ga bomo rabili za development</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">pip3</span> <span class="n">install</span> <span class="n">virtualenv</span>
+<span class="n">sudo</span> <span class="n">pip3</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pypa</span><span class="o">/</span><span class="n">virtualenv</span><span class="o">/</span><span class="n">tarball</span><span class="o">/</span><span class="n">master</span>
+<span class="n">virtualenv</span> <span class="n">LOCAL</span><span class="p">(</span><span class="n">MOJE</span> <span class="n">VIRTUALNO</span> <span class="n">OKOLJE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="okolje-za-development-local">
+<h3>3.5.2. OKOLJE ZA DEVELOPMENT(LOCAL)<a class="headerlink" href="#okolje-za-development-local" title="Permalink to this headline">¶</a></h3>
+<p>mogoče je treba s sudo pip3
+v requirements/local.txt so naloženi programi za development</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">LOCAL</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">/</span><span class="n">local</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">udpp navodila</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Linux.html">1. LINUX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git.html">2. GIT</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. PYTHON</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instalacija-pythona">3.1. instalacija Pythona</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delo-z-moduli">3.2. delo z moduli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#razno">3.3. razno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pip">3.4. pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#virtualno-okolje">3.5. VIRTUALNO OKOLJE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CookieCutter.html">4. COOKIECUTTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Django.html">5. DJANGO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Postgres.html">6. POSTGRES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Selenium.html">7. SELENIUM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSH,FileZilla.html">8. SSH,FILEZILLA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sublime.html">9. SUBLIME 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReadTheDocs.html">10. READTHEDOCS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IPnaslovi.html">11. IP naslovi</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Git.html" title="previous chapter">2. GIT</a></li>
+      <li>Next: <a href="CookieCutter.html" title="next chapter">4. COOKIECUTTER</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, rados.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/Python.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

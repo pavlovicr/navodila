@@ -1,0 +1,205 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>10. READTHEDOCS &#8212; udpp navodila 01 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '01',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="11. IP naslovi" href="IPnaslovi.html" />
+    <link rel="prev" title="9. SUBLIME 3" href="Sublime.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="readthedocs">
+<h1>10. READTHEDOCS<a class="headerlink" href="#readthedocs" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://docs.readthedocs.io/en/latest/getting_started.html">Getting Started</a>.</p>
+<p>Splošno :</p>
+<ul class="simple">
+<li>aplikacija za oblikovanje teksta in objavo na internetu</li>
+<li>sphinx oblikovanje teksta lokalno v html formatu</li>
+<li>vaja je direktorij s katerga bomo pošiljali v vaja na github</li>
+<li>spletna stran ReadTheDocs za javno objavo</li>
+<li>aplikacija deluje v pythonu 3 , priporočljivo jo je inštalirati v virtualnem okolju</li>
+<li>za django si poglej poglavje Read the Docs features</li>
+</ul>
+<div class="section" id="instalacija-linux">
+<h2>10.1. instalacija linux<a class="headerlink" href="#instalacija-linux" title="Permalink to this headline">¶</a></h2>
+<p>Zahteve :</p>
+<ul class="simple">
+<li>python3</li>
+<li>virtualno okolje</li>
+<li>direktorij docs znotraj vaja</li>
+<li>iz direktorija docs zaženemo sphinx-quickstart</li>
+</ul>
+<p>Instalacija :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install sphinx sphinx-autobuild
+$ mkdir vaja
+$ cd vaja
+$ mkdir doc
+$ sphinx-quickstart
+</pre></div>
+</div>
+<p>Pretvorba v html lokalno (znotraj docs) :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ make html
+</pre></div>
+</div>
+<p>Test :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sphinx-autobuild . _build/html
+</pre></div>
+</div>
+</div>
+<div class="section" id="instalacija-v-windows">
+<h2>10.2. instalacija v windows<a class="headerlink" href="#instalacija-v-windows" title="Permalink to this headline">¶</a></h2>
+<p>Zahteve :</p>
+<ul class="simple">
+<li>instalacija pythona3 za windows</li>
+<li>git za windows</li>
+<li>pravzaprav popolnoma enako kot v linuxu, le malo drugače aktiviramo virtualno</li>
+<li>gremo v CMD terminal , kjer je instaliran python</li>
+<li>instaliramo aplikacijo za virtualno okolje in ustvarimo naše virtualno okolje “virtualno”</li>
+<li>aktiviramo naše virtualno okolje</li>
+<li>instaliramo sphinx ali sphinx autobuild</li>
+<li>kjerkoli (virtualno) ustvarimo dirktorij našega projekta vaja in znotraj vaje docs</li>
+<li>znotrj docs poženemo sphinx-quickstart</li>
+<li>v failu indeks.rst imenujemo rst fajle, ki jih bomo videli</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenv</span>
+<span class="o">&gt;</span> <span class="n">virtualenv</span> <span class="n">virtualno</span>
+<span class="o">&gt;</span> <span class="n">cd</span> <span class="o">/</span><span class="n">virtualno</span><span class="o">/</span><span class="n">Scripts</span>
+<span class="o">&gt;</span> <span class="n">activate</span>
+<span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">autobuild</span>
+<span class="o">&gt;</span> <span class="n">mkdir</span> <span class="n">vaja</span>
+<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">vaja</span>
+<span class="o">&gt;</span> <span class="n">mkdir</span> <span class="n">docs</span>
+<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">docs</span>
+<span class="o">&gt;</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">quickstart</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="oblikovanje">
+<h2>10.3. Oblikovanje :<a class="headerlink" href="#oblikovanje" title="Permalink to this headline">¶</a></h2>
+<p>text = “””
+.. _top:</p>
+<div class="section" id="hello-word">
+<h3>10.3.1. Hello word<a class="headerlink" href="#hello-word" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>zamiki</li>
+</ol>
+<ul class="simple">
+<li>zamik “*”<ul>
+<li>zamik še enkrat “-“<ul>
+<li>in še enkrat</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">udpp navodila</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Linux.html">1. LINUX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git.html">2. GIT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Python.html">3. PYTHON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CookieCutter.html">4. COOKIECUTTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Django.html">5. DJANGO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Postgres.html">6. POSTGRES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Selenium.html">7. SELENIUM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SSH,FileZilla.html">8. SSH,FILEZILLA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sublime.html">9. SUBLIME 3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">10. READTHEDOCS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instalacija-linux">10.1. instalacija linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacija-v-windows">10.2. instalacija v windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oblikovanje">10.3. Oblikovanje :</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="IPnaslovi.html">11. IP naslovi</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Sublime.html" title="previous chapter">9. SUBLIME 3</a></li>
+      <li>Next: <a href="IPnaslovi.html" title="next chapter">11. IP naslovi</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, rados.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/ReadTheDocs.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
