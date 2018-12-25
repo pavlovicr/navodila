@@ -1,5 +1,15 @@
 GIT
 ======
+reinstalacija vsebine iz računalnika, ki ima željeni commit file
+::
+	git reset --hard efgestujizlm098nhg
+
+reinstalacija vsebine iz githuba
+	::
+	git fetch --install
+	git reset --hard origin/stevilcenje
+
+
 
 instalacija
 ::
@@ -12,10 +22,24 @@ nastavitve uporabnika
 	git config --global user.name "pavlovicr"
 	git config --global user.email pavlovicrados@gmail.com
 
-prelistajmo nastavitve in spremenimo nastavitve 
+prelistajmo nastavitve in spremenimo nastavitve
 ::
 	git config --list
-	vim ~/.gitconfig 
+	vim ~/.gitconfig
+
+ponovna vzpostavitev sistema
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ko delamo na osnovnemu računalniku
+::
+	git reset --hard  5efcdstre........
+
+ko kopiramo iz git huba
+::
+	git fetch --all
+	
+	git reset --hard origin/stevilcenje
+	
+
 
 osnovne komande
 ^^^^^^^^^^^^^^^
@@ -27,7 +51,7 @@ dodamo spremembe
 	git add .
 pospremimo spremembe
 ::
-	git commit -m "spremljajoci tekst" -a  
+	git commit -m "spremljajoci tekst" -a
 dve muhi na en mah
 ::
 	git commit -a -m "spremni tekst"
@@ -35,9 +59,9 @@ ustvari nov repository na GitHub in remot povezavo
 ::
 	git remote add origin https://github.com/pavlovicr/udpp.git
 
-ko origin že obstaja, ga izbrišemo z  	
+ko origin že obstaja, ga izbrišemo z
 ::
-	git remote rm origin  
+	git remote rm origin
 ko nas sprašuje za uporabniško ime
 ::
 	git remote set-url origin git@github.com:pavlovicr/udpp.git
@@ -47,7 +71,7 @@ priprava kljuca
 v linux terminalu ustvarimo ssh ključ
 na vprašanja odgovorimo z enter
 gremo v fail ~/.ssh/id_rsa.pub in skopiramo ključ
-v GitHub v settings generiramo nov ključ s kopiranjem kode iz id_rsa.pub  
+v GitHub v settings generiramo nov ključ s kopiranjem kode iz id_rsa.pub
 ::
 	ssh-keygen -t rsa -C "pavlovicrados@gmail.com"
 	vim  ~/.ssh/id_rsa.pub
@@ -72,9 +96,3 @@ kloniraj vsebino iz remota
 ::
 	git clone git@github.com:pavlovicr/udpp.git
 	git clone https://github.com/pavlovicr/udpp.git
-
-
-
-
-
-

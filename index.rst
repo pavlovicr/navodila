@@ -9,8 +9,9 @@ Welcome to udpp's documentation!
 .. toctree::
    :maxdepth: 2
    :numbered:
-   
+
    Linux
+   FreeNas
    WindowsCMD
    Git
    Python
@@ -19,7 +20,7 @@ Welcome to udpp's documentation!
    Postgres
    Selenium
    SSH,FileZilla
-   Sublime	
+   Sublime
    ReadTheDocs
    IPnaslovi
 
