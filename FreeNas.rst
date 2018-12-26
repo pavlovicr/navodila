@@ -40,27 +40,6 @@ V nasprotnem bodo podatki v podrejenih datasetih izgubljeni
 Wake on LAN (WOL) support depends on the FreeBSD driver for the interface. If the driver supports WOL, it can be enabled using ifconfig(8). To determine if WOL is supported on a particular interface, use the interface name with the following command. In this example, the capabilities line indicates that WOL is supported for the re0 interface:
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-instalacija linux
-^^^^^^^^^^^^^^^^^
-
 Zahteve :
 
 * python3
