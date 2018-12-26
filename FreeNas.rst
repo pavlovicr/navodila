@@ -58,15 +58,6 @@ Wake on LAN (WOL) support depends on the FreeBSD driver for the interface. If th
 
 
 
-
-
-* sphinx oblikovanje teksta lokalno v html formatu
-* vaja je direktorij s katerga bomo pošiljali v vaja na github
-* spletna stran ReadTheDocs za javno objavo
-* aplikacija deluje v pythonu 3 , priporočljivo jo je inštalirati v virtualnem okolju
-* za django si poglej poglavje Read the Docs features
-
-
 instalacija linux
 ^^^^^^^^^^^^^^^^^
 
