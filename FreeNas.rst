@@ -10,6 +10,7 @@ OPERACIJSKI SISTEM :
 
 
 RAM :
+====
 
 *Jals niso ravno požrešni, kak -Giga je dobrodošel
 *Dedupliciranje je požrešno in zahteva 5 Giga na Tera diska
