@@ -48,12 +48,6 @@ Zahteve :
 * iz direktorija docs zaženemo sphinx-quickstart
 
 
-
-Pretvorba v html lokalno (znotraj docs) :
-::
-
-   $ make html
-
 Test :
 ::
 
