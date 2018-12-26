@@ -1,4 +1,4 @@
-FreeNas
+FreeNas to je tapravo
 ===========
 
 Splošno :
