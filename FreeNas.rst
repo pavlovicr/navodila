@@ -48,16 +48,6 @@ Zahteve :
 * iz direktorija docs zaženemo sphinx-quickstart
 
 
-Instalacija :
-
-::
-
-   $ pip install sphinx sphinx-autobuild
-   $ mkdir vaja
-   $ cd vaja
-   $ mkdir doc
-   $ sphinx-quickstart
-
 
 Pretvorba v html lokalno (znotraj docs) :
 ::
