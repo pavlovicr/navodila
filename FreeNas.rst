@@ -6,8 +6,6 @@ Splošno :
 
 OPERACIJSKI SISTEM :
 * na dveh enakih USB ključih s priporočenimi 32 GiB , ki sta oba priključena med instalacijo
-* boljše rezultate dosežemo s SSD diski vendar pobirajo prostor HDD diskom.
-
 
 RAM :
 
@@ -15,6 +13,16 @@ RAM :
 *Dedupliciranje je požrešno in zahteva 5 Giga na Tera diska
 *VM 1Giga na mašino
 *izklopiti video kartico v biosu
+
+WOL(Wake On LAN) :
+
+* Trenutni mrežni interface ne podpira WOL, ki omogoča, da NAS prebudimo s povezavo na omrežju
+
+.. image:: foto.jpg
+
+
+
+
 
 
 SINHRONIZACIJA Z MEGA :
